@@ -49,7 +49,8 @@
 <h2>What Animiru stores, and where</h2>
 <p>Animiru stores the following <strong>only on your device</strong>:</p>
 <ul><li>The list of shows you follow</li><li>Cached show information (titles, cover art, air times, synopses)</li><li>A small backup copy of your watchlist, so it survives if the system reclaims storage space</li><li>On Apple TV, a short list of shows airing today, so the Top Shelf row can display them</li></ul>
-<p>None of this is transmitted anywhere. It is not backed up to a server we run, because we do not run one. If you delete the app, this data is deleted with it.</p>
+<p>Animiru does not transmit any of this. There is no Animiru server to send it to, and we could not read your watchlist even if we wanted to. If you delete the app, this data goes with it.</p>
+<p>One honest caveat about iCloud. Animiru does not use iCloud itself — it has no iCloud entitlement, no CloudKit database, and no iCloud sync. But like any app&#x27;s local data, what Animiru stores on your device can be included in <strong>your own iCloud Backup</strong> if you have device backups turned on in iOS or tvOS settings. That backup belongs to you and Apple, is encrypted, and is governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple&#x27;s privacy policy</a> — the developer of Animiru has no access to it and receives nothing from it. You can control this under Settings → your name → iCloud. We mention it because &quot;stays on your device&quot; would otherwise be slightly too neat: your data may live in your own backup as well.</p>
 <h2>What leaves your device</h2>
 <p>Animiru fetches anime information from one public, community-maintained database:</p>
 <ul><li><strong>AniList</strong> — <code>https://graphql.anilist.co</code></li></ul>
