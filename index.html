@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animiru — Support</title>
+<style>
+  :root{
+    --bg:#0F0E1A; --surface:#16152400; --card:#1A1928;
+    --text:#F5F5FA; --muted:#A9A7BC; --accent:#8B7CF0; --line:#2A2840;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 22px 96px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .mark{
+    width:44px;height:44px;border-radius:11px;flex:none;
+    background:linear-gradient(145deg,var(--accent),#5B4BC4);
+    display:grid;place-items:center;font-size:22px;
+  }
+  h1{font-size:30px;letter-spacing:-.02em;margin:0}
+  .tag{color:var(--muted);margin:6px 0 40px}
+  h2{font-size:19px;letter-spacing:-.01em;margin:38px 0 12px}
+  h3{font-size:16px;margin:24px 0 6px}
+  p,li{color:#DCDBE8}
+  a{color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:18px 0}
+  .card p:first-child{margin-top:0}
+  .card p:last-child{margin-bottom:0}
+  ul{padding-left:20px}
+  li{margin:7px 0}
+  .muted{color:var(--muted);font-size:14px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer a{margin-right:16px}
+  code{background:#242236;padding:2px 6px;border-radius:5px;font-size:14px}
+  @media (max-width:520px){ h1{font-size:25px} .wrap{padding:38px 18px 72px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">▶</div>
+    <h1>Animiru Support</h1>
+  </header>
+  <p class="tag">Your anime airing schedule, in your time zone.</p>
+
+  <div class="card">
+    <p><strong>Need a hand?</strong> Email <a href="mailto:trevestforvor@gmail.com">trevestforvor@gmail.com</a>
+    and include your device, iOS or tvOS version, and the name of the show if it's about a specific title.
+    I read every message.</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <ul>
+    <li>Open the <strong>Schedule</strong> tab to see what's airing today and across the week.</li>
+    <li>Tap <strong>+</strong> on any poster to follow that show.</li>
+    <li>Followed shows appear in <strong>My List</strong>, grouped by the day their next episode lands.</li>
+    <li><strong>Discover</strong> lets you search, browse next season, and see what's returning from hiatus.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+
+  <h3>Why is My List empty when I first open the app?</h3>
+  <p>That's expected. Animiru doesn't guess what you watch — go to Schedule or Discover and follow a few
+  shows, and they'll appear in My List.</p>
+
+  <h3>The air time looks wrong</h3>
+  <p>Animiru converts Japanese broadcast times to your device's local time zone. A show listed as
+  late-night Tuesday in Japan can legitimately land on Monday or Tuesday morning where you are.
+  If a time still looks wrong, email me the show name and your time zone.</p>
+
+  <h3>A show is missing</h3>
+  <p>Show data comes from <a href="https://anilist.co" rel="noopener">AniList</a>, a community-maintained
+  database. If an entry is missing or wrong there, it will be missing or wrong in Animiru. Corrections
+  made on AniList flow through on the next sync.</p>
+
+  <h3>Nothing is loading</h3>
+  <p>Animiru needs a connection for its first sync. If it can't reach the network you'll see a banner
+  saying so, and it will keep showing whatever it last downloaded. Pull down on My List to retry.</p>
+
+  <h3>The "Open in…" buttons don't always land on the right episode</h3>
+  <p>This one is a genuine limitation, so it's worth being straight about. Animiru can ask another app to
+  open a title, but it can't control what that app then does — some providers accept a link and still
+  drop you on their home screen. That's why the buttons say <em>Open</em> rather than <em>Watch</em>.
+  Availability also varies by region, and the catalog data is global.</p>
+
+  <h3>Do I need an account?</h3>
+  <p>No. There's no sign-up and no login. Your watchlist lives on your device.</p>
+
+  <h3>How do I delete my data?</h3>
+  <p>Delete the app. Everything Animiru stores is local, so it goes with it. There's no server-side
+  account to close — see the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Notifications</h2>
+  <p>If you allow notifications, Animiru schedules local reminders for episodes of shows you follow.
+  These are generated on your device; nothing about your watchlist is sent anywhere. You can turn them
+  off in <code>Settings → Notifications → Animiru</code>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:trevestforvor@gmail.com">Contact</a>
+    <p style="margin-top:14px">Animiru is an independent app and is not affiliated with, endorsed by, or
+    sponsored by AniList or any streaming service.</p>
+  </footer>
+
+</div>
+</body>
+</html>
